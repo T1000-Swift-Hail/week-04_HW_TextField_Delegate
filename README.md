@@ -48,7 +48,7 @@
 - - Inside the function , create var amountValue = 0.0
 - - set amountValue to the value from inputTextField.text . *hint use Double() to convert text to Double
 - - Using Switch Conditional on conversionType
-- - case .KG: 
+- - case .KG:
 
       let convertedValue = convertToKG(pound: amountValue)
       conversionLabel.text = "\(convertedValue) Pounds"
