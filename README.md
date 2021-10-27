@@ -27,7 +27,7 @@
 - - inside the function ,  using a Switch on the segmentControl.selectedSegmentIndex 
 - - case 0:  conversionType = .KG , conversionLabel.text = "0.0 Pounds"
 - - case 1:  conversionType = .Pound , conversionLabel.text = "0.0 KG"
-- - case default: conversionType = .KG , conversionLabel.text = "0.0 Pounds"
+- -  default: conversionType = .KG , conversionLabel.text = "0.0 Pounds"
 
 
 - Inside your ViewController , create the following functions to handle the mass conversions :
