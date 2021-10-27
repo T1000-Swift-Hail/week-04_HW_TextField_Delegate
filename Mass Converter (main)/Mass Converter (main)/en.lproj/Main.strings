@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "0.0 Pound"; ObjectID = "HN2-2I-r8Y"; */
+"HN2-2I-r8Y.text" = "0.0 Pound";
+
+/* Class = "UILabel"; text = "Mass Converter"; ObjectID = "XHc-v1-uNa"; */
+"XHc-v1-uNa.text" = "Mass Converter";
+
+/* Class = "UISegmentedControl"; YY1-pV-Tvy.segmentTitles[0] = "KG"; ObjectID = "YY1-pV-Tvy"; */
+"YY1-pV-Tvy.segmentTitles[0]" = "KG";
+
+/* Class = "UISegmentedControl"; YY1-pV-Tvy.segmentTitles[1] = "Pound"; ObjectID = "YY1-pV-Tvy"; */
+"YY1-pV-Tvy.segmentTitles[1]" = "Pound";
