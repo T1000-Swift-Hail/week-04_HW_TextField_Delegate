@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mass_Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MrK-pP-Evq">
+                                <rect key="frame" x="90" y="168" width="234" height="32"/>
+                                <segments>
+                                    <segment title="Kg"/>
+                                    <segment title="Pound"/>
+                                </segments>
+                                <connections>
+                                    <action selector="valuechange:" destination="BYZ-38-t0r" eventType="valueChanged" id="bsF-l6-zI0"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 Pound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YN4-Ly-stX">
+                                <rect key="frame" x="100" y="254" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LxP-hZ-P9O">
+                                <rect key="frame" x="29" y="362" width="356" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="editinngChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="h8V-1l-7mv"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRN-HG-5fb">
+                                <rect key="frame" x="60" y="96" width="294" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="YN4-Ly-stX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="5S5-Aw-bY1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YN4-Ly-stX" secondAttribute="trailing" constant="100" id="O6E-xn-DKl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRN-HG-5fb" secondAttribute="trailing" constant="60" id="RDY-cF-cDG"/>
+                            <constraint firstItem="MrK-pP-Evq" firstAttribute="top" secondItem="FRN-HG-5fb" secondAttribute="bottom" constant="29" id="fU1-M2-YLg"/>
+                            <constraint firstItem="LxP-hZ-P9O" firstAttribute="top" secondItem="YN4-Ly-stX" secondAttribute="bottom" constant="87" id="hwo-K3-fTg"/>
+                            <constraint firstItem="FRN-HG-5fb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="jVf-UQ-beW"/>
+                            <constraint firstItem="LxP-hZ-P9O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="k9t-Iq-krJ"/>
+                            <constraint firstItem="FRN-HG-5fb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="kt7-yA-7ir"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LxP-hZ-P9O" secondAttribute="trailing" constant="29" id="nes-4i-foR"/>
+                            <constraint firstItem="MrK-pP-Evq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="nql-kH-4IL"/>
+                            <constraint firstItem="YN4-Ly-stX" firstAttribute="top" secondItem="MrK-pP-Evq" secondAttribute="bottom" constant="55" id="s06-NE-Jkt"/>
+                            <constraint firstItem="MrK-pP-Evq" firstAttribute="top" secondItem="FRN-HG-5fb" secondAttribute="bottom" constant="29" id="tUT-f6-o4O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MrK-pP-Evq" secondAttribute="trailing" constant="90" id="w3C-jo-WsJ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="f1a-jZ-BZ4" appends="YES" id="O4b-Lb-6aB"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="conversionLabel" destination="YN4-Ly-stX" id="Fya-Sy-YuO"/>
+                        <outlet property="inputTextField" destination="LxP-hZ-P9O" id="31E-4R-wl7"/>
+                        <outlet property="segmentControl" destination="MrK-pP-Evq" id="wGq-f2-gHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="f1a-jZ-BZ4">
+                    <connections>
+                        <action selector="dismissTap" destination="BYZ-38-t0r" id="BQu-Fw-ccB"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-186" y="194"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
