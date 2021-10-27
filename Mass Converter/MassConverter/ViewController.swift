@@ -43,15 +43,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
-                
-        
-                let stringCount = inputTextField.text?.count ?? 0
-                if  stringCount < 6 {
-                     return true
-                 }
-                 else {
-                     return false
-                 }
+        if textField.text!.count > 5 && string.count > 0{
+            return false
+        }
+        else {
+            return true
+        }
         
     }
     @IBAction func Segment1(_ sender: Any) {
