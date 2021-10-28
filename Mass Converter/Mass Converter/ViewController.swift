@@ -50,10 +50,27 @@ override func viewDidLoad() {
         return KG*0.45
     }
     
+
+    @IBAction func editingchanged(_ sender: Any) {
+        
+        var amountValue = Double(inputTextField.text ?? "0.0") ?? 0
+        
+        switch conversionType {
+        case .KG:
+            let convertedValue = convertToKG(Pound: amountValue)
+            conversionLabel.text = "\(convertedValue) Pounds"
+        case .Pound:
+            let convertedValue = convertToPound(KG: amountValue)
+            conversionLabel.text = "\(convertedValue) KG"
+
+
+        }
+        
+        
+    }
     
     
-    
-    func textField(_textField:UITextField,shuldChangeCaractersIn range :NSRange ,replacementstring string :String ) -> Bool {
+func textField(_textField:UITextField,shuldChangeCaractersIn range :NSRange ,replacementstring string :String ) -> Bool {
         
         if inputTextField.text!.count < 6 {
             return true
