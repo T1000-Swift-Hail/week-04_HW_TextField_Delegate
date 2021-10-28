@@ -1,24 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mass_Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 Pound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADP-0P-2ok">
+                                <rect key="frame" x="165.5" y="360" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j3K-5g-VjS">
+                                <rect key="frame" x="148.5" y="141" width="117" height="32"/>
+                                <segments>
+                                    <segment title="KG"/>
+                                    <segment title="Pound"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment:" destination="BYZ-38-t0r" eventType="valueChanged" id="VS7-1w-YzK"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0 " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vnW-Ia-oVW">
+                                <rect key="frame" x="10" y="431" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="changeTextValue:" destination="BYZ-38-t0r" eventType="editingChanged" id="isT-6O-HwQ"/>
+                                    <action selector="textFiled:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="EwJ-2M-uqZ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass Converter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uha-mt-7c9">
+                                <rect key="frame" x="102" y="74" width="210" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vnW-Ia-oVW" secondAttribute="trailing" constant="10" id="1js-dc-ax4"/>
+                            <constraint firstItem="ADP-0P-2ok" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6au-fE-Kso"/>
+                            <constraint firstItem="j3K-5g-VjS" firstAttribute="top" secondItem="Uha-mt-7c9" secondAttribute="bottom" constant="30" id="Rah-dU-VJt"/>
+                            <constraint firstItem="vnW-Ia-oVW" firstAttribute="top" secondItem="ADP-0P-2ok" secondAttribute="bottom" constant="50" id="TqE-05-sY5"/>
+                            <constraint firstItem="vnW-Ia-oVW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Trb-mR-jeo"/>
+                            <constraint firstItem="Uha-mt-7c9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hML-YC-Avo"/>
+                            <constraint firstItem="Uha-mt-7c9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="pux-AC-kFA"/>
+                            <constraint firstItem="vnW-Ia-oVW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uiF-mp-Xr6"/>
+                            <constraint firstItem="j3K-5g-VjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wme-Rf-axL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="conversionLabel" destination="ADP-0P-2ok" id="amf-WL-r1V"/>
+                        <outlet property="inputTextField" destination="vnW-Ia-oVW" id="c43-JO-RNa"/>
+                        <outlet property="segmentControl" destination="j3K-5g-VjS" id="xIM-OF-wQF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
