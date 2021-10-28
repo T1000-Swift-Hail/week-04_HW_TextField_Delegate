@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mass_Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gid-Z8-nEA">
+                                <rect key="frame" x="146.5" y="93" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Sdz-YQ-sXc">
+                                <rect key="frame" x="148.5" y="149" width="117" height="32"/>
+                                <segments>
+                                    <segment title="KG"/>
+                                    <segment title="pound"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="u2Y-Nl-Ul2"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnk-yL-m5J">
+                                <rect key="frame" x="171" y="317" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 Pound " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PK4-37-DnK">
+                                <rect key="frame" x="163.5" y="222" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOl-j8-hSL">
+                                <rect key="frame" x="50" y="333" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="changTextvalue:" destination="BYZ-38-t0r" eventType="editingChanged" id="1j0-Pi-T9a"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PK4-37-DnK" firstAttribute="top" secondItem="Sdz-YQ-sXc" secondAttribute="bottom" constant="42" id="1vf-ME-eHE"/>
+                            <constraint firstItem="Gid-Z8-nEA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dcz-JL-r8y"/>
+                            <constraint firstItem="Gid-Z8-nEA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="JP5-tF-7Eu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bOl-j8-hSL" secondAttribute="trailing" constant="50" id="Jjd-9h-Y9I"/>
+                            <constraint firstItem="Sdz-YQ-sXc" firstAttribute="top" secondItem="Gid-Z8-nEA" secondAttribute="bottom" constant="35" id="O4y-PC-cVb"/>
+                            <constraint firstItem="PK4-37-DnK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zxr-pj-IOM"/>
+                            <constraint firstItem="bOl-j8-hSL" firstAttribute="top" secondItem="PK4-37-DnK" secondAttribute="bottom" constant="90" id="ega-gA-IeA"/>
+                            <constraint firstItem="bOl-j8-hSL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="nJ0-eQ-ksI"/>
+                            <constraint firstItem="Sdz-YQ-sXc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xa0-l9-TFi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="conversionLabel" destination="PK4-37-DnK" id="7ax-Ed-GMa"/>
+                        <outlet property="inputTextField" destination="bOl-j8-hSL" id="XgQ-bO-9ZB"/>
+                        <outlet property="segmentControl" destination="Sdz-YQ-sXc" id="1Bl-Ft-qxS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
