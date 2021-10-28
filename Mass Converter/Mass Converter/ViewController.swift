@@ -68,6 +68,7 @@ class ViewController: UIViewController, UITextFieldDelegate,UITextViewDelegate {
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
     }
     
     func convertToKG( pound : Double) -> Double{
