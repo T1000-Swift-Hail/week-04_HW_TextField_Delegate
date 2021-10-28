@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mass_Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Mass Converterl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmv-is-1CC">
+                                <rect key="frame" x="102.66666666666669" y="100" width="223" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="wOA-eH-4Qr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 Pound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX9-Ao-pMA">
+                                <rect key="frame" x="172.66666666666666" y="266" width="83" height="20.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFB-8G-ux2">
+                                <rect key="frame" x="30" y="334.33333333333331" width="368" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="SegmentedControll:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="obG-UY-Fdu"/>
+                                    <action selector="inputTextField1:" destination="BYZ-38-t0r" eventType="editingChanged" id="Vs4-to-rKP"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eEj-El-uhS">
+                                <rect key="frame" x="142" y="187" width="145" height="32"/>
+                                <segments>
+                                    <segment title="KG"/>
+                                    <segment title="bounds"/>
+                                </segments>
+                                <connections>
+                                    <action selector="SegmentedControll:" destination="BYZ-38-t0r" eventType="valueChanged" id="JOC-QQ-ZBs"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UFB-8G-ux2" firstAttribute="top" secondItem="hX9-Ao-pMA" secondAttribute="bottom" constant="47.5" id="21H-LJ-1hL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eEj-El-uhS" secondAttribute="trailing" constant="141" id="HkY-zm-s9O"/>
+                            <constraint firstItem="hX9-Ao-pMA" firstAttribute="top" secondItem="eEj-El-uhS" secondAttribute="bottom" constant="48" id="NYv-zH-ZSh"/>
+                            <constraint firstItem="eEj-El-uhS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="SBw-kf-bos"/>
+                            <constraint firstItem="hX9-Ao-pMA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T9v-yh-n17"/>
+                            <constraint firstItem="UFB-8G-ux2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Wtj-wa-EEp"/>
+                            <constraint firstItem="UFB-8G-ux2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XMz-Za-4YD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UFB-8G-ux2" secondAttribute="trailing" constant="30" id="ZZj-O2-hZC"/>
+                            <constraint firstItem="mmv-is-1CC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iDq-OU-LkO"/>
+                            <constraint firstItem="eEj-El-uhS" firstAttribute="top" secondItem="mmv-is-1CC" secondAttribute="bottom" constant="50" id="qAX-Fp-noS"/>
+                            <constraint firstItem="mmv-is-1CC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="tn9-86-bFF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="conversionLabel" destination="hX9-Ao-pMA" id="JI5-V9-Ng8"/>
+                        <outlet property="inputTextField" destination="UFB-8G-ux2" id="lOc-1B-odw"/>
+                        <outlet property="segmentControl" destination="eEj-El-uhS" id="SdN-Rv-bEU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="O4T-fn-Bb8">
+                    <connections>
+                        <action selector="dismissKB:" destination="BYZ-38-t0r" id="bsa-tR-YjZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
