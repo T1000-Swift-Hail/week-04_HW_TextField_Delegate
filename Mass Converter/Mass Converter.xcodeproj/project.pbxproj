@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9638B5B27280BCC003C9FBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9638B5A27280BCC003C9FBD /* AppDelegate.swift */; };
+		F9638B5D27280BCC003C9FBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9638B5C27280BCC003C9FBD /* SceneDelegate.swift */; };
+		F9638B5F27280BCC003C9FBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9638B5E27280BCC003C9FBD /* ViewController.swift */; };
+		F9638B6227280BCC003C9FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9638B6027280BCC003C9FBD /* Main.storyboard */; };
+		F9638B6427280BCF003C9FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9638B6327280BCF003C9FBD /* Assets.xcassets */; };
+		F9638B6727280BCF003C9FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9638B6527280BCF003C9FBD /* LaunchScreen.storyboard */; };
+		F9638B7227280BD0003C9FBD /* Mass_ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9638B7127280BD0003C9FBD /* Mass_ConverterTests.swift */; };
+		F9638B7C27280BD0003C9FBD /* Mass_ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9638B7B27280BD0003C9FBD /* Mass_ConverterUITests.swift */; };
+		F9638B7E27280BD0003C9FBD /* Mass_ConverterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9638B7D27280BD0003C9FBD /* Mass_ConverterUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9638B6E27280BD0003C9FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9638B4F27280BCC003C9FBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9638B5627280BCC003C9FBD;
+			remoteInfo = "Mass Converter";
+		};
+		F9638B7827280BD0003C9FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9638B4F27280BCC003C9FBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9638B5627280BCC003C9FBD;
+			remoteInfo = "Mass Converter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9638B5727280BCC003C9FBD /* Mass Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mass Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9638B5A27280BCC003C9FBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9638B5C27280BCC003C9FBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F9638B5E27280BCC003C9FBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9638B6127280BCC003C9FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9638B6327280BCF003C9FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9638B6627280BCF003C9FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9638B6827280BCF003C9FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9638B6D27280BD0003C9FBD /* Mass ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mass ConverterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9638B7127280BD0003C9FBD /* Mass_ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mass_ConverterTests.swift; sourceTree = "<group>"; };
+		F9638B7727280BD0003C9FBD /* Mass ConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mass ConverterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9638B7B27280BD0003C9FBD /* Mass_ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mass_ConverterUITests.swift; sourceTree = "<group>"; };
+		F9638B7D27280BD0003C9FBD /* Mass_ConverterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mass_ConverterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9638B5427280BCC003C9FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9638B6A27280BD0003C9FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9638B7427280BD0003C9FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9638B4E27280BCC003C9FBD = {
+			isa = PBXGroup;
+			children = (
+				F9638B5927280BCC003C9FBD /* Mass Converter */,
+				F9638B7027280BD0003C9FBD /* Mass ConverterTests */,
+				F9638B7A27280BD0003C9FBD /* Mass ConverterUITests */,
+				F9638B5827280BCC003C9FBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9638B5827280BCC003C9FBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9638B5727280BCC003C9FBD /* Mass Converter.app */,
+				F9638B6D27280BD0003C9FBD /* Mass ConverterTests.xctest */,
+				F9638B7727280BD0003C9FBD /* Mass ConverterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9638B5927280BCC003C9FBD /* Mass Converter */ = {
+			isa = PBXGroup;
+			children = (
+				F9638B5A27280BCC003C9FBD /* AppDelegate.swift */,
+				F9638B5C27280BCC003C9FBD /* SceneDelegate.swift */,
+				F9638B5E27280BCC003C9FBD /* ViewController.swift */,
+				F9638B6027280BCC003C9FBD /* Main.storyboard */,
+				F9638B6327280BCF003C9FBD /* Assets.xcassets */,
+				F9638B6527280BCF003C9FBD /* LaunchScreen.storyboard */,
+				F9638B6827280BCF003C9FBD /* Info.plist */,
+			);
+			path = "Mass Converter";
+			sourceTree = "<group>";
+		};
+		F9638B7027280BD0003C9FBD /* Mass ConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9638B7127280BD0003C9FBD /* Mass_ConverterTests.swift */,
+			);
+			path = "Mass ConverterTests";
+			sourceTree = "<group>";
+		};
+		F9638B7A27280BD0003C9FBD /* Mass ConverterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9638B7B27280BD0003C9FBD /* Mass_ConverterUITests.swift */,
+				F9638B7D27280BD0003C9FBD /* Mass_ConverterUITestsLaunchTests.swift */,
+			);
+			path = "Mass ConverterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9638B5627280BCC003C9FBD /* Mass Converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9638B8127280BD0003C9FBD /* Build configuration list for PBXNativeTarget "Mass Converter" */;
+			buildPhases = (
+				F9638B5327280BCC003C9FBD /* Sources */,
+				F9638B5427280BCC003C9FBD /* Frameworks */,
+				F9638B5527280BCC003C9FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mass Converter";
+			productName = "Mass Converter";
+			productReference = F9638B5727280BCC003C9FBD /* Mass Converter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9638B6C27280BD0003C9FBD /* Mass ConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9638B8427280BD0003C9FBD /* Build configuration list for PBXNativeTarget "Mass ConverterTests" */;
+			buildPhases = (
+				F9638B6927280BD0003C9FBD /* Sources */,
+				F9638B6A27280BD0003C9FBD /* Frameworks */,
+				F9638B6B27280BD0003C9FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9638B6F27280BD0003C9FBD /* PBXTargetDependency */,
+			);
+			name = "Mass ConverterTests";
+			productName = "Mass ConverterTests";
+			productReference = F9638B6D27280BD0003C9FBD /* Mass ConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9638B7627280BD0003C9FBD /* Mass ConverterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9638B8727280BD0003C9FBD /* Build configuration list for PBXNativeTarget "Mass ConverterUITests" */;
+			buildPhases = (
+				F9638B7327280BD0003C9FBD /* Sources */,
+				F9638B7427280BD0003C9FBD /* Frameworks */,
+				F9638B7527280BD0003C9FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9638B7927280BD0003C9FBD /* PBXTargetDependency */,
+			);
+			name = "Mass ConverterUITests";
+			productName = "Mass ConverterUITests";
+			productReference = F9638B7727280BD0003C9FBD /* Mass ConverterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9638B4F27280BCC003C9FBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					F9638B5627280BCC003C9FBD = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					F9638B6C27280BD0003C9FBD = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F9638B5627280BCC003C9FBD;
+					};
+					F9638B7627280BD0003C9FBD = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F9638B5627280BCC003C9FBD;
+					};
+				};
+			};
+			buildConfigurationList = F9638B5227280BCC003C9FBD /* Build configuration list for PBXProject "Mass Converter" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9638B4E27280BCC003C9FBD;
+			productRefGroup = F9638B5827280BCC003C9FBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9638B5627280BCC003C9FBD /* Mass Converter */,
+				F9638B6C27280BD0003C9FBD /* Mass ConverterTests */,
+				F9638B7627280BD0003C9FBD /* Mass ConverterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9638B5527280BCC003C9FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9638B6727280BCF003C9FBD /* LaunchScreen.storyboard in Resources */,
+				F9638B6427280BCF003C9FBD /* Assets.xcassets in Resources */,
+				F9638B6227280BCC003C9FBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9638B6B27280BD0003C9FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9638B7527280BD0003C9FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9638B5327280BCC003C9FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9638B5F27280BCC003C9FBD /* ViewController.swift in Sources */,
+				F9638B5B27280BCC003C9FBD /* AppDelegate.swift in Sources */,
+				F9638B5D27280BCC003C9FBD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9638B6927280BD0003C9FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9638B7227280BD0003C9FBD /* Mass_ConverterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9638B7327280BD0003C9FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9638B7C27280BD0003C9FBD /* Mass_ConverterUITests.swift in Sources */,
+				F9638B7E27280BD0003C9FBD /* Mass_ConverterUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9638B6F27280BD0003C9FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9638B5627280BCC003C9FBD /* Mass Converter */;
+			targetProxy = F9638B6E27280BD0003C9FBD /* PBXContainerItemProxy */;
+		};
+		F9638B7927280BD0003C9FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9638B5627280BCC003C9FBD /* Mass Converter */;
+			targetProxy = F9638B7827280BD0003C9FBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9638B6027280BCC003C9FBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9638B6127280BCC003C9FBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9638B6527280BCF003C9FBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9638B6627280BCF003C9FBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9638B7F27280BD0003C9FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9638B8027280BD0003C9FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9638B8227280BD0003C9FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mass Converter/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.Mass-Converter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9638B8327280BD0003C9FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mass Converter/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.Mass-Converter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9638B8527280BD0003C9FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.Mass-ConverterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mass Converter.app/Mass Converter";
+			};
+			name = Debug;
+		};
+		F9638B8627280BD0003C9FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.Mass-ConverterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mass Converter.app/Mass Converter";
+			};
+			name = Release;
+		};
+		F9638B8827280BD0003C9FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.Mass-ConverterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mass Converter";
+			};
+			name = Debug;
+		};
+		F9638B8927280BD0003C9FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.Mass-ConverterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mass Converter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9638B5227280BCC003C9FBD /* Build configuration list for PBXProject "Mass Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9638B7F27280BD0003C9FBD /* Debug */,
+				F9638B8027280BD0003C9FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9638B8127280BD0003C9FBD /* Build configuration list for PBXNativeTarget "Mass Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9638B8227280BD0003C9FBD /* Debug */,
+				F9638B8327280BD0003C9FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9638B8427280BD0003C9FBD /* Build configuration list for PBXNativeTarget "Mass ConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9638B8527280BD0003C9FBD /* Debug */,
+				F9638B8627280BD0003C9FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9638B8727280BD0003C9FBD /* Build configuration list for PBXNativeTarget "Mass ConverterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9638B8827280BD0003C9FBD /* Debug */,
+				F9638B8927280BD0003C9FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9638B4F27280BCC003C9FBD /* Project object */;
+}
