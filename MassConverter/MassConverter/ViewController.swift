@@ -74,7 +74,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
         let inputTextFieldNumber = inputTextField.text?.count ?? 0
-        if (inputTextFieldNumber == 6) || (inputTextFieldNumber < 6){
+        if (inputTextFieldNumber < 6 ) && (string.count > 0 ) || range.length > 0 {
             return true
         }
         else{
