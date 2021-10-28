@@ -76,9 +76,9 @@ class ViewController: UIViewController,UITextFieldDelegate  {
     func textField(_ textField: UITextField,shouldChangeCharactersIn rang:NSRange,replacementString string: String) -> Bool {
         if  inputTextField.text?.count ?? 0 >= 6 {
             //if  <= 6 { return true
-            return true
-        } else {
             return false
+        } else {
+            return true
         }
     }
     
@@ -86,17 +86,6 @@ class ViewController: UIViewController,UITextFieldDelegate  {
     @IBAction func textChanged(_ sender: Any) {
         
         var amountValue = 0.0
-        
-    }
-    
-    @objc func dismisskey() {
-        
-        inputTextField.resignFirstResponder()
-        
-        
-        
-        
-        
         let userText = inputTextField.text ?? "0.0"
         
         let userTextDouble = Double(userText) ?? 0.0
@@ -111,6 +100,17 @@ class ViewController: UIViewController,UITextFieldDelegate  {
             let convertedValue = convertToPound(kg: userTextDouble)
             conversionLabel.text = "\(convertedValue) KG"
         }
+
+    }
+    
+    @objc func dismisskey() {
+        
+        inputTextField.resignFirstResponder()
+        
+        
+        
+        
+        
         
         
     }
